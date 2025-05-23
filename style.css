@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Para apilar h1 y escenario */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Un color de fondo agradable */
+}
+
+#escenario {
+    width: 600px;
+    height: 200px;
+    border: 3px solid #0077cc;
+    background-color: #87CEEB; /* Color cielo/agua */
+    position: relative; /* Necesario para posicionar el cangrejo absolutamente dentro */
+    overflow: hidden; /* Para que el cangrejo no se salga visualmente */
+    margin-top: 20px;
+}
+
+#cangrejo {
+    position: absolute;
+    bottom: 10px; /* Posición inicial cerca del "suelo" del escenario */
+    left: 50px;  /* Posición inicial a la izquierda */
+    font-size: 50px; /* Tamaño del emoji del cangrejo */
+    /* Si usas una imagen, ajusta width y height en lugar de font-size:
+    width: 80px;
+    height: auto; */
+    transition: transform 0.1s linear; /* Para que el volteo sea suave */
+}
